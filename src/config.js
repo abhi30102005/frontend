@@ -1,2 +1,2 @@
-REACT_APP_API_URL="https://backend-z5dv.onrender.com"
-REACT_APP_DASHBOARD_URL="https://dashboard-nine-phi-81.vercel.app"
+export const API_URL = process.env.REACT_APP_API_URL || "http://localhost:3002";
+export const DASHBOARD_URL = process.env.REACT_APP_DASHBOARD_URL || "http://localhost:3001";
