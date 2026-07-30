@@ -15,11 +15,15 @@ function Login() {
         setLoading(true);
 
         try {
-            await axios.post(
+            const res = await axios.post(
                 `${API_URL}/login`,
                 { email, password },
                 { withCredentials: true }
             );
+
+            console.log(res.data);
+
+            alert("LOGIN SUCCESS");
 
             window.location.href = DASHBOARD_URL;
         } catch (err) {
